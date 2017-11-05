@@ -1,0 +1,29 @@
+.rating {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: 20px;
+  float: left;
+}
+ 
+.rating li {
+  display: block;
+  width: 20px;
+  height: 20px;
+  float: right;
+  text-indent: -9999px; 
+  cursor: pointer;
+  background: url("../image/star_sprites.png");
+  background-position: -11px -11px;
+}
+
+.rating li:hover,
+.rating li:hover ~ li {
+   background-position: -49px -11px;
+}
+
+.rating li.active,
+.rating li.active ~ li {
+  background-position: -49px -11px;
+}

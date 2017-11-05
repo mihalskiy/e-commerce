@@ -1,0 +1,25 @@
+/* .product__info-details {
+    zoom: 1; filter:
+progid:DXImageTransform.Microsoft.Shadow(color='#999', Direction=0, Strength=3)
+progid:DXImageTransform.Microsoft.Shadow(color='#999', Direction=45, Strength=2)
+progid:DXImageTransform.Microsoft.Shadow(color='#999', Direction=90, Strength=3)
+progid:DXImageTransform.Microsoft.Shadow(color='#999', Direction=135, Strength=2)
+progid:DXImageTransform.Microsoft.Shadow(color='#999', Direction=180, Strength=3)
+progid:DXImageTransform.Microsoft.Shadow(color='#999', Direction=225, Strength=2)
+progid:DXImageTransform.Microsoft.Shadow(color='#999', Direction=260, Strength=3)
+progid:DXImageTransform.Microsoft.Shadow(color='#999', Direction=305, Strength=2);
+} */
+/* 
+.product__info-details {
+
+filter:
+progid:DXImageTransform.Microsoft.Shadow(color='#042b47', Direction=45, Strength=6)
+progid:DXImageTransform.Microsoft.Shadow(color='#042b47', Direction=135, Strength=6)
+progid:DXImageTransform.Microsoft.Shadow(color='#042b47', Direction=225, Strength=6)
+progid:DXImageTransform.Microsoft.Shadow(color='#042b47', Direction=315, Strength=6);
+position: relative;
+top: -12px;
+left: -12px;
+zoom: 1;
+
+} */

@@ -1,2 +1,132 @@
-body 
-    background-color: red;
+$font_OpenSas: 'Open Sans', sans-serif;
+$font_oswald: 'Open Sans', sans-serif;
+$color: #2c303d;
+  
+
+@import "resset.scss";
+
+body
+    background: #f6f6f6;
+    font-family: $font_OpenSas;
+    color: $color;
+
+h1
+    font-family: $font_oswald;
+    font-size: 24px;
+    text-transform: uppercase;
+
+
+.container 
+    width: 835px;
+    max-width: 835px;
+    min-width: 360px;
+
+.wrapper 
+    margin: 
+        top: 30px;
+        left: 50px;
+    height: 100%;
+    width: 100%;
+    
+
+.product
+    
+    &__img
+        background-image: url(../image/product_index.jpg);
+        width: 326px;
+        height: 405px;
+        display: block;
+        float: left;
+
+.product__info
+    margin: 
+        left: 57.57px;
+    float: left;
+
+    &-title
+        font-family: $font_oswald;
+        font-family: Oswald;
+        color:  #2c303d;
+        font-size: 24.02px;
+        font-weight: 700;
+        line-height: 5.808px;
+        text-align: left;
+        transform: matrix(1,-0.0012,0,1,0,0);
+        display: block;
+
+    &-id
+        color:  #7d7f85;
+        font-size: 10px;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        line-height: 32.5px;/* Приближение из-за подстановки шрифтов */
+        text-align: left;
+        margin: 
+            top: 20px;
+            bottom: 25px;
+        display: block;
+    &-price
+        font-size: 24px;/* Приближение из-за подстановки шрифтов */
+        font-weight: 700;
+        line-height: 7.356px;/* Приближение из-за подстановки шрифтов */
+        text-align: left;
+        &-old
+            float: left;
+            margin: 
+                right: 25px;
+        &-cheaper
+            color: #ce2c52;
+    &-rating
+        display: inline-block;
+        width: 100%;
+        margin-top: 25px;
+        
+    &-share
+        color: #2c87ce;
+        font-size: 18px;
+        cursor: pointer;
+        float: left;
+        font-weight: 700;
+        line-height: 16px;/* Приближение из-за подстановки шрифтов */
+        text-align: left;
+        margin: 
+            left: 16px;
+
+    &-details
+            background: #fff;
+            border: 1px solid #adadad;
+            display: block;
+            position: fixed;
+            margin-top: 25px;
+            margin-left: 4px;
+            width: 287px;
+            height: 115px;
+            -moz-box-shadow: 0 0 5px #222; /* Firefox */
+            -webkit-box-shadow: 0 0 5px #222; /* Webkit */
+            box-shadow: 0 0 5px #222; /* Standard */
+    &-details-title
+        font-size: 12px;/* Приближение из-за подстановки шрифтов */
+        font-weight: 300;
+        line-height: 16px;/* Приближение из-за подстановки шрифтов */
+        text-align: left;
+        width: 370px;
+        margin-top: 30px;
+.size
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    
+
+    &>li
+        background: #fff;
+        border-radius: 50px
+        width: 38px;
+        behavior: url(border-radius.htc);
+        height: 38px;
+        border: 1px solid #565656;
+        font-weight: 700;
+
+    &>li:hover
+        background: #2c303d;
+        color: #f6f6f6;
+    
+            
