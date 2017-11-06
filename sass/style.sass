@@ -30,6 +30,7 @@ h1
     
 
 .product
+    float: left;
     
     &__img
         background-image: url(../image/product_index.jpg);
@@ -95,7 +96,7 @@ h1
             background: #fff;
             border: 1px solid #adadad;
             display: block;
-            position: fixed;
+            position: absolute;
             margin-top: 25px;
             margin-left: 4px;
             width: 287px;
@@ -118,6 +119,16 @@ h1
         line-height: 32.5px;
         text-align: left;
         margin-right: 18px;
+
+    &-addToSize
+        display: block;
+        padding: 16.5px 56px;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: bold;
+        background: #8ae6cf;
+        border: none;
+        border-radius: 29px 29px 29px 29px;
 
 
 .size
@@ -146,5 +157,22 @@ h1
 
 .top
     margin-top: 10px;
+
+.grid
+    display: block;
+    clear: both;
+    margin-top: 67px;
+    float: left;
+
+    &__title
+        font-size: 22px;/* Приближение из-за подстановки шрифтов */
+        font-weight: 700;
+        line-height: 32.5px;/* Приближение из-за подстановки шрифтов */
+        text-align: left;
+        margin-bottom: 20px;
+
+    &__product-img img
+        margin: 0 10px 10px 0;
+        display: inline-block;
     
             

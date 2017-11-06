@@ -106,6 +106,10 @@ h1 {
   width: 100%;
 }
 
+.product {
+  float: left;
+}
+
 .product__img {
   background-image: url(../image/product_index.jpg);
   width: 326px;
@@ -184,7 +188,7 @@ h1 {
   background: #fff;
   border: 1px solid #adadad;
   display: block;
-  position: fixed;
+  position: absolute;
   margin-top: 25px;
   margin-left: 4px;
   width: 287px;
@@ -217,6 +221,17 @@ h1 {
   margin-right: 18px;
 }
 
+.product__info-addToSize {
+  display: block;
+  padding: 16.5px 56px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  background: #8ae6cf;
+  border: none;
+  border-radius: 29px 29px 29px 29px;
+}
+
 .size {
   content: 'size';
   margin-top: 30px;
@@ -243,4 +258,26 @@ h1 {
 
 .top {
   margin-top: 10px;
+}
+
+.grid {
+  display: block;
+  clear: both;
+  margin-top: 67px;
+  float: left;
+}
+
+.grid__title {
+  font-size: 22px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  line-height: 32.5px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.grid__product-img img {
+  margin: 0 10px 10px 0;
+  display: inline-block;
 }
