@@ -208,6 +208,21 @@ h1 {
   margin-top: 30px;
 }
 
+.product__info-size-title {
+  float: left;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 32.5px;
+  text-align: left;
+  margin-right: 18px;
+}
+
+.size {
+  content: 'size';
+  margin-top: 30px;
+  margin-bottom: 23px;
+}
+
 .size > li {
   background: #fff;
   border-radius: 50px;
@@ -218,9 +233,14 @@ h1 {
   text-transform: uppercase;
   text-align: center;
   display: inline-block;
+  behavior: url("../PIE/PIE.htc");
 }
 
 .size > li:hover {
   background: #2c303d;
   color: #f6f6f6;
+}
+
+.top {
+  margin-top: 10px;
 }
