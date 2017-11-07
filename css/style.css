@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -94,8 +95,7 @@ h1 {
 }
 
 .container {
-  max-width: 835px;
-  min-width: 360px;
+  width: 835px;
   margin: 0 auto;
 }
 
@@ -190,7 +190,7 @@ h1 {
 .product__info-details {
   background: #fff;
   border: 1px solid #adadad;
-  display: block;
+  display: none;
   position: absolute;
   margin-top: 15px;
   margin-left: 4px;
@@ -236,6 +236,71 @@ h1 {
   content: 'size';
   margin-top: 25px;
   margin-bottom: 23px;
+}
+
+.social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  clear: both;
+  padding-left: 15px;
+  display: inline-block;
+}
+
+.social li {
+  display: inline-block;
+  width: 41px;
+  height: 41px;
+  text-indent: -9999px;
+  cursor: pointer;
+  margin: 18px 10px 20px 0px;
+}
+
+.facebook {
+  width: 41px;
+  height: 41px;
+  background: url("../image/social_sprites.png") -10px -10px;
+}
+
+.twiter {
+  width: 41px;
+  height: 41px;
+  background: url("../image/social_sprites.png") -71px -10px;
+}
+
+.p {
+  width: 41px;
+  height: 41px;
+  background: url("../image/social_sprites.png") -10px -71px;
+}
+
+.instagram {
+  width: 41px;
+  height: 41px;
+  background: url("../image/social_sprites.png") -71px -71px;
+}
+
+.youtube {
+  width: 41px;
+  height: 41px;
+  background: url("../image/social_sprites.png") -132px -10px;
+}
+
+.share {
+  margin: 15px 0 0 15px;
+  cursor: none;
+  font-size: 18px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  line-height: 16px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+}
+
+.right {
+  float: right;
+  margin-top: 13px;
+  margin-right: 15px;
 }
 
 .size > li {
@@ -297,6 +362,44 @@ h1 {
   text-align: center;
   display: inline-block;
   font-weight: bold;
+  margin-bottom: 10px;
+  padding-right: 10px;
+}
+
+.grid__product-img1 {
+  width: 265px;
+  height: 265px;
+  background: url(../image/product_1.jpg);
+}
+
+.grid__product-img2 {
+  width: 265px;
+  height: 265px;
+  background: url(../image/product_2.jpg);
+}
+
+.grid__product-img3 {
+  width: 265px;
+  height: 265px;
+  background: url(../image/product_3.jpg);
+}
+
+.grid__product-img4 {
+  width: 265px;
+  height: 265px;
+  background: url(../image/product_4.jpg);
+}
+
+.grid__product-img5 {
+  width: 265px;
+  height: 265px;
+  background: url(../image/product_5.jpg);
+}
+
+.grid__product-img6 {
+  width: 265px;
+  height: 265px;
+  background: url(../image/product_6.jpg);
 }
 
 .grid__backgaund {
@@ -305,7 +408,7 @@ h1 {
   height: 22px;
   position: absolute;
   /* top: 174px; */
-  bottom: 32px;
+  bottom: 20px;
   right: 10px;
 }
 
@@ -330,13 +433,15 @@ h1 {
   display: none;
 }
 
-@media screen and (max-width: 844px) {
+@media screen and (max-width: 710px) {
   .wrapper {
     margin-left: 30px;
+    width: 710px;
     margin-top: 40px;
   }
   .product__info {
     margin-left: 20px;
+    width: 50%;
   }
   .product__img {
     background-image: url(../image/laptop_index.jpg);
@@ -375,5 +480,75 @@ h1 {
   }
   .product__info-details-title {
     clear: both;
+  }
+  .grid__product-img1 {
+    width: 300px;
+    height: 284px;
+    background: url(../image/tablet_product1.jpg);
+  }
+  .grid__product-img2 {
+    width: 300px;
+    height: 284px;
+    background: url(../image/tablet_product2.jpg);
+  }
+  .grid__product-img3 {
+    width: 300px;
+    height: 284px;
+    background: url(../image/tablet_product3.jpg);
+  }
+  .grid__product-img4 {
+    width: 300px;
+    height: 284px;
+    background: url(../image/tablet_product4.jpg);
+  }
+  .grid__product-img5 {
+    width: 300px;
+    height: 284px;
+    background: url(../image/tablet_product5.jpg);
+  }
+  .grid__product-img6 {
+    width: 300px;
+    height: 284px;
+    background: url(../image/tablet_product6.jpg);
+  }
+  .grid__product-img {
+    margin: 0 20px 40px 20px;
+  }
+  .grid__title {
+    text-align: center;
+  }
+  .display {
+    display: none;
+  }
+  .grid__backgaund {
+    bottom: 6px;
+    background: #8ae6cf;
+    opacity: 0.8;
+    width: 280px;
+  }
+  .text-right, .text-left {
+    width: 100%;
+    font-size: 22px;
+    opacity: 1;
+  }
+  .product__info-details {
+    display: block;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+  }
+  .product__info-details:after {
+    content: none;
+  }
+  .social {
+    display: block;
+  }
+  .social li {
+    display: block;
+    position: relative;
+    top: -460px;
+    right: 20px;
   }
 }
