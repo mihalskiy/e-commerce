@@ -128,7 +128,7 @@ h1
     float: left
     font-size: 14px
     font-weight: bold
-    line-height: 32.5px
+    line-height: 37.5px
     text-align: left
     margin-right: 18px
     text-transform: uppercase
@@ -337,18 +337,16 @@ h1
   .product__info-size-title
     display: none
   .select
-    display: block
-    margin-top: 25px
-    margin-bottom: 10px
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 125px
   .details
     display: block
     margin-top: 20px
-  .size
-    clear: both
-    margin-top: 30px
-    margin-bottom: 10px
   .size > li
     margin-right: 20px
+  .size > li:hover
+    background: red
   .product__info-details-title
     clear: both
 
@@ -408,12 +406,92 @@ h1
     position: relative;
     top: -106px;
     right: 359px;
-  li:hover
+  .size > li
+    cursor: pointer
+    display: inline-block
+  .size li:hover
     background: #2c303d
     color: #fff
     display: block
 
-
-
+@media screen and (max-width: 402px)
+  .container
+    width: 402px
+    margin: 0 auto
+  .wrapper
+    margin: 0
+  .product__info
+    margin-left: 30px;
+    display: block;
+    position: relative;
+    top: 105px;
+  .product__info-id
+    margin-bottom: 15px
+  .product__info-rating
+    margin-top: 15px
+  .product__img
+    background-image: url(../image/mobile_index.jpg)
+    width: 402px
+    height: 420px
+  .product__info-title
+    right: 0px;
+    top: -127px;
+    float: left;
+    line-height: 1.5;
+    margin: 32px 104px 0 40px;
+  .product__img
+    position: relative
+    top: 125px
+  .product__info-share
+    display: none
+  .product__info-size-title
+    display: none
+  .select
+    display: block
+    margin-top: 25px
+    margin-bottom: 10px
+  .details
+    display: none
+    margin-top: 20px
+  .size
+    clear: both
+    margin-bottom: 30px;
+    margin-left: 80px;
+  .size > li
+    margin-right: 20px
+  .product__info-details-title
+    clear: both
+  .product__info-addToSize
+    margin: 0 auto
+  .grid__title
+    text-align: center
+    display: block
+    margin-left: 90px
+    margin-top: 142px
+  .display
+    display: none
+  .product__list
+    display: none
+  .social
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: -15px;
+  .social li 
+    display: inline-block
+    top: 386px
+    right: 359px
+    position: initial
+  .product__info-details-title
+    margin-top: 95px
+    margin-right: 40px
+    width: 100%
+  // .social
+  //   display: block
+  // .social li
+  //   display: block;
+  //   position: relative;
+  //   top: -106px;
+  //   right: 359px;
     
             
