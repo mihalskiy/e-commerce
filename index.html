@@ -33,9 +33,12 @@ function my_f(objName) {
     <div class="container">
         <div class="wrapper">
             <div class="product">
-                <div class="product__img"></div>
+                <div class="product__img">
+                    <h1 class="product__info-title">For gamers by gamers TEE</h1>
+                </div>
+                
                 <div class="product__info">
-                  <h1 class="product__info-title">For gamers by gamers TEE</h1>
+                  
                   <span class="product__info-id">Item #: 701642853695</span>
                   <div class="product__info-price">
                     <span class="product__info-price-old" style='text-decoration:line-through'>$29.50</span>
@@ -51,8 +54,10 @@ function my_f(objName) {
                     </ol>
                     <p class="product__info-share"  href="javascript:void(0)" onclick="my_f('textid')">Share it!</p>
                   </div>
-                  <div class="product__info-details sdan" id="textid" style="display:block;">
+                  <p class="product__info-size-title details">details: </p>
+                  <div class="product__info-details sdan" id="textid" style="display:none;">
                     <p class="product__info-share share">Share with</p>
+                    
                     <p class="product__info-share right" href="javascript:void(0)" onclick="my_f('textid')">x</p>
                     <ol class="social">
                       <li class="facebook">1</li>
@@ -67,10 +72,11 @@ function my_f(objName) {
                   </div>
                   <div class="product__info-size">
                     <p class="product__info-size-title">Size: </p>
+                    <p class="product__info-size-title select">SELECT A SIZE: </p>
                     <ol class="size">
-                      <li class="size-xs"><p class="top">xl</p></li>
+                      <li class="size-xs"><p class="top">xs</p></li>
                       <li class="size-s"><p class="top">s</p></li>
-                      <li class="size-m"><p class="top">m</p></li>
+                      <li class="size-m"><p class="top">M</p></li>
                       <li class="size-l"><p class="top">l</p></li>
                     </ol>
                   </div>
