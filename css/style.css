@@ -232,12 +232,6 @@ h1 {
   border-radius: 29px 29px 29px 29px;
 }
 
-.size {
-  content: 'size';
-  margin-top: 25px;
-  margin-bottom: 23px;
-}
-
 .social {
   list-style: none;
   margin: 0;
@@ -303,6 +297,11 @@ h1 {
   margin-right: 15px;
 }
 
+.size {
+  margin-top: 25px;
+  margin-bottom: 23px;
+}
+
 .size > li {
   background: #fff;
   border-radius: 50px;
@@ -319,7 +318,7 @@ h1 {
 
 .size > li:hover {
   background: #2c303d;
-  color: #f6f6f6;
+  color: #fff;
 }
 
 .top {
@@ -433,7 +432,7 @@ h1 {
   display: none;
 }
 
-@media screen and (max-width: 710px) {
+@media screen and (max-width: 716px) {
   .wrapper {
     margin-left: 30px;
     width: 710px;
@@ -477,6 +476,9 @@ h1 {
     clear: both;
     margin-top: 30px;
     margin-bottom: 10px;
+  }
+  .size > li {
+    margin-right: 20px;
   }
   .product__info-details-title {
     clear: both;
@@ -550,5 +552,10 @@ h1 {
     position: relative;
     top: -106px;
     right: 359px;
+  }
+  li:hover {
+    background: #2c303d;
+    color: #fff;
+    display: block;
   }
 }
