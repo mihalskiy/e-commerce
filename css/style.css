@@ -551,6 +551,9 @@ h1 {
     top: -106px;
     right: 359px;
   }
+  .size {
+    clear: both;
+  }
   .size > li {
     cursor: pointer;
     display: inline-block;
@@ -559,6 +562,12 @@ h1 {
     background: #2c303d;
     color: #fff;
     display: block;
+  }
+  .select {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 0px;
   }
 }
 
@@ -608,6 +617,7 @@ h1 {
     display: block;
     margin-top: 25px;
     margin-bottom: 10px;
+    margin-left: 75px;
   }
   .details {
     display: none;
@@ -616,7 +626,7 @@ h1 {
   .size {
     clear: both;
     margin-bottom: 30px;
-    margin-left: 80px;
+    margin-left: 32px;
   }
   .size > li {
     margin-right: 20px;
