@@ -2,6 +2,7 @@ $font-open-sans: 'Open Sans', sans-serif
 $font-oswald: 'Open Sans', sans-serif
 $color: #2c303d
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import "resset.scss"
 
 body
@@ -19,6 +20,7 @@ h1
   width: 835px
   max-width: 835px
   min-width: 360px
+  margin: 0 auto;
 
 .wrapper
   margin:
@@ -48,10 +50,8 @@ h1
     font-family: Oswald
     color:  #2c303d
     font-size: 24.02px
-    font-weight: 700
-    line-height: 5.808px
+    font-weight: bold
     text-align: left
-    transform: matrix(1,-0.0012,0,1,0,0)
     display: block
 
   &-id
@@ -61,20 +61,22 @@ h1
     line-height: 32.5px /* Приближение из-за подстановки шрифтов */
     text-align: left
     margin:
-      top: 20px
-      bottom: 25px
+      top: 10px
+      bottom: 15px
+    font-family: $font-open-sans
     display: block
   &-price
     font-size: 24px /* Приближение из-за подстановки шрифтов */
-    font-weight: 700
-    line-height: 7.356px /* Приближение из-за подстановки шрифтов */
+    font-weight: bold
     text-align: left
     &-old
       float: left
       margin:
         right: 25px
+      font-family: $font-open-sans
     &-cheaper
       color: #ce2c52
+      font-family: $font-open-sans
   &-rating
     display: inline-block
     width: 100%
@@ -90,6 +92,7 @@ h1
     text-align: left
     margin:
       left: 16px
+    font-family: $font-open-sans
 
   &-details
     background: #fff
@@ -110,6 +113,7 @@ h1
     text-align: left
     width: 370px
     margin-top: 30px
+    font-family: $font-open-sans
 
   &-size-title
     float: left
@@ -175,18 +179,42 @@ h1
     margin: 0 10px 10px 0
     
 .product__info-details:after 
-    content: '▲';
-    display: block;
-    width: 15px;
-    height: 10px;
-    font-size: 20px;
     position: absolute;
-    color: #f6f6f6;
-    top: -17px;
-    /* border: 1px solid red; */
-    left: 50%;
-    text-shadow: 0px -3px 6px black;
+    width: 10px;
+    height: 10px;
+    top: 20px;
+    left: 3%;
+    content: '';
+    //transform: rotate(45deg);
+    margin-top: -30px;
+    background: url(../image/triangle.png);
+
+.grid__product-img 
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
 
 
+.grid__backgaund
+    display: block;
+    
+    width: 148px;
+    height: 22px;
+    position: absolute;
+    /* top: 174px; */
+    bottom: 32px;
+    right: 10px;
+.text-left
+  padding: 3px 10px;
+  margin: 0;
+  background: #8ae6cf;
+  float: right;
+
+.text-right
+    padding: 3px 10px;
+    background: #8ae6cf;
+    float: right;
+  
     
             

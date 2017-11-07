@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -97,6 +97,7 @@ h1 {
   width: 835px;
   max-width: 835px;
   min-width: 360px;
+  margin: 0 auto;
 }
 
 .wrapper {
@@ -128,10 +129,8 @@ h1 {
   font-family: Oswald;
   color: #2c303d;
   font-size: 24.02px;
-  font-weight: 700;
-  line-height: 5.808px;
+  font-weight: bold;
   text-align: left;
-  transform: matrix(1, -0.0012, 0, 1, 0, 0);
   display: block;
 }
 
@@ -141,25 +140,27 @@ h1 {
   font-weight: 400;
   line-height: 32.5px;
   text-align: left;
-  margin-top: 20px;
-  margin-bottom: 25px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-family: "Open Sans", sans-serif;
   display: block;
 }
 
 .product__info-price {
   font-size: 24px;
-  font-weight: 700;
-  line-height: 7.356px;
+  font-weight: bold;
   text-align: left;
 }
 
 .product__info-price-old {
   float: left;
   margin-right: 25px;
+  font-family: "Open Sans", sans-serif;
 }
 
 .product__info-price-cheaper {
   color: #ce2c52;
+  font-family: "Open Sans", sans-serif;
 }
 
 .product__info-rating {
@@ -177,6 +178,7 @@ h1 {
   line-height: 16px;
   text-align: left;
   margin-left: 16px;
+  font-family: "Open Sans", sans-serif;
 }
 
 .product__info-details {
@@ -200,6 +202,7 @@ h1 {
   text-align: left;
   width: 370px;
   margin-top: 30px;
+  font-family: "Open Sans", sans-serif;
 }
 
 .product__info-size-title {
@@ -271,15 +274,42 @@ h1 {
 }
 
 .product__info-details:after {
-  content: '▲';
-  display: block;
-  width: 15px;
-  height: 10px;
-  font-size: 20px;
   position: absolute;
-  color: #f6f6f6;
-  top: -17px;
-  /* border: 1px solid red; */
-  left: 50%;
-  text-shadow: 0px -3px 6px black;
+  width: 10px;
+  height: 10px;
+  top: 20px;
+  left: 3%;
+  content: '';
+  margin-top: -30px;
+  background: url(../image/triangle.png);
+}
+
+.grid__product-img {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.grid__backgaund {
+  display: block;
+  width: 148px;
+  height: 22px;
+  position: absolute;
+  /* top: 174px; */
+  bottom: 32px;
+  right: 10px;
+}
+
+.text-left {
+  padding: 3px 10px;
+  margin: 0;
+  background: #8ae6cf;
+  float: right;
+}
+
+.text-right {
+  padding: 3px 10px;
+  background: #8ae6cf;
+  float: right;
 }
