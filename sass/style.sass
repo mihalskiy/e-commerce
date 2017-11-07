@@ -1,11 +1,10 @@
 $font-open-sans: 'Open Sans', sans-serif
-$font-oswald: 'Open Sans', sans-serif
+$font-oswald: 'Oswald', sans-serif
 $color: #2c303d
 
 $small: 320px
 $large: 768px
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans')
 @import "resset.scss"
 
 body
@@ -14,14 +13,13 @@ body
   color: $color
 
 h1
-  font-family: $font-oswald
+  font-family: $font-open-sans
   font-size: 24px
   text-transform: uppercase
 
-
 .container
   width: 835px
-  margin: 0 auto;
+  margin: 0 auto
 
 .wrapper
   margin:
@@ -37,7 +35,7 @@ h1
   width: 100%
 
   &__img
-    background-image: url(../image/product_index.jpg)
+    background-image: url('../image/product_index.jpg')
     width: 400px
     height: 420px
     display: block
@@ -49,42 +47,47 @@ h1
   float: left
 
   &-title
-    font-family: Oswald;
-    color: #2c303d;
-    font-size: 24.02px;
-    font-weight: bold;
-    text-align: left;
-    display: block;
-    margin-left: 57.57px;
-    position: relative;
-    /* left: 281px; */
-    float: right;
-    right: -315px;
-    top: -5px;
+    font-family: $font-oswald
+    color: #2c303d
+    font-size: 24.02px
+    font-weight: bold
+    text-align: left
+    display: block
+    margin-left: 57.57px
+    position: relative
+    /* left: 281px */
+    float: right
+    right: -315px
+    top: -5px
 
   &-id
     color:  #7d7f85
-    font-size: 10px /* Приближение из-за подстановки шрифтов */
+    font-size: 10px
     font-weight: 400
-    line-height: 32.5px /* Приближение из-за подстановки шрифтов */
+    line-height: 32.5px
     text-align: left
     margin:
       top: 25px
       bottom: 10px
     font-family: $font-open-sans
     display: block
+
   &-price
-    font-size: 24px /* Приближение из-за подстановки шрифтов */
+    font-size: 24px
     font-weight: bold
     text-align: left
+
     &-old
       float: left
       margin:
         right: 25px
       font-family: $font-open-sans
+      text-decoration:line-through
+
     &-cheaper
       color: #ce2c52
       font-family: $font-open-sans
+
   &-rating
     display: inline-block
     width: 100%
@@ -96,7 +99,7 @@ h1
     cursor: pointer
     float: left
     font-weight: 700
-    line-height: 16px /* Приближение из-за подстановки шрифтов */
+    line-height: 16px
     text-align: left
     margin:
       left: 16px
@@ -111,14 +114,14 @@ h1
     margin-left: 4px
     width: 287px
     height: 115px
-    -moz-box-shadow: 0 0 5px #222  /* Firefox */
-    -webkit-box-shadow: 0 0 5px #222  /* Webkit */
-    box-shadow: 0 0 5px #222  /* Standard */
+    -moz-box-shadow: 0 0 5px #222
+    -webkit-box-shadow: 0 0 5px #222
+    box-shadow: 0 0 5px #222
 
   &-details-title
-    font-size: 12px /* Приближение из-за подстановки шрифтов */
+    font-size: 12px
     font-weight: 300
-    line-height: 16px /* Приближение из-за подстановки шрифтов */
+    line-height: 16px
     text-align: left
     width: 370px
     margin-top: 20px
@@ -143,60 +146,60 @@ h1
     border: none
     border-radius: 29px 29px 29px 29px
 
+.social
+  list-style: none
+  margin: 0
+  padding: 0
+  clear: both
+  padding-left: 15px
+  display: inline-block
 
+.social li
+  display: inline-block
+  width: 41px
+  height: 41px
+  text-indent: -9999px
+  cursor: pointer
+  margin: 18px 10px 20px 0
 
+.facebook
+  width: 41px
+  height: 41px
+  background: url('../image/social_sprites.png') -10px -10px
 
-.social 
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    clear: both;
-    padding-left: 15px;
-    display: inline-block;
-
-.social li 
-    display: inline-block;
-    width: 41px;
-    height: 41px;
-    text-indent: -9999px; 
-    cursor: pointer;
-    margin: 18px 10px 20px 0px;
-
-.facebook 
-    width: 41px; height: 41px;
-    background: url('../image/social_sprites.png') -10px -10px;
-
-.twiter 
-    width: 41px; height: 41px;
-    background: url('../image/social_sprites.png') -71px -10px;
+.twiter
+  width: 41px
+  height: 41px
+  background: url('../image/social_sprites.png') -71px -10px
 
 .p
-    width: 41px; height: 41px;
-    background: url('../image/social_sprites.png') -10px -71px;
+  width: 41px
+  height: 41px
+  background: url('../image/social_sprites.png') -10px -71px
 
-.instagram 
-    width: 41px; height: 41px;
-    background: url('../image/social_sprites.png') -71px -71px;
-
-
-.youtube 
-    width: 41px; height: 41px;
-    background: url('../image/social_sprites.png') -132px -10px;
+.instagram
+  width: 41px
+  height: 41px
+  background: url('../image/social_sprites.png') -71px -71px
 
 
-.share 
-    margin: 15px 0 0 15px;
-    cursor: none;
-    font-size: 18px;/* Приближение из-за подстановки шрифтов */
-    font-weight: 700;
-    line-height: 16px;/* Приближение из-за подстановки шрифтов */
-    text-align: left;
+.youtube
+  width: 41px
+  height: 41px
+  background: url('../image/social_sprites.png') -132px -10px
 
+.share
+  margin: 15px 0 0 15px
+  cursor: none
+  font-size: 18px
+  font-weight: 700
+  line-height: 16px
+  text-align: left
 
-.right 
-    float: right;
-    margin-top: 13px;
-    margin-right: 15px;
+.right
+  float: right
+  margin-top: 13px
+  margin-right: 15px
 
 .size
   margin:
@@ -214,7 +217,7 @@ h1
   text-align: center
   display: inline-block
   text-transform: uppercase
-  behavior: url('../PIE/PIE.htc')
+  behavior: url('../pie/PIE.htc')
 
 .size > li:hover
   background: #2c303d
@@ -230,85 +233,91 @@ h1
   float: left
 
   &__title
-    font-size: 22px  /* Приближение из-за подстановки шрифтов */
+    font-size: 22px
     font-weight: 700
-    line-height: 32.5px  /* Приближение из-за подстановки шрифтов */
+    line-height: 32.5px
     margin-bottom: 20px
     text-align: left
 
   &__product-img img
     display: inline-block
     margin: 0 10px 10px 0
-    
-.product__info-details:after 
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    top: 20px;
-    left: 3%;
-    content: '';
-    //transform: rotate(45deg);
-    margin-top: -30px;
-    background: url(../image/triangle.png);
 
-.grid__product-img 
-    position: relative;
-    text-align: center;
-    display: inline-block;
-    font-weight: bold;
-    margin-bottom: 10px;
-    padding-right: 10px;
-    
+.product__info-details:after
+  position: absolute
+  width: 10px
+  height: 10px
+  top: 20px
+  left: 3%
+  content: ''
+  //transform: rotate(45deg)
+  margin-top: -30px
+  background: url('../image/triangle.png')
+
+.grid__product-img
+  position: relative
+  text-align: center
+  display: inline-block
+  font-weight: bold
+  margin-bottom: 10px
+  padding-right: 10px
+
 .grid__product-img1
-    width: 265px
-    height: 265px
-    background: url(../image/product_1.jpg);
+  width: 265px
+  height: 265px
+  background: url('../image/product_1.jpg')
 
 .grid__product-img2
-    width: 265px
-    height: 265px
-    background: url(../image/product_2.jpg);
-.grid__product-img3
-    width: 265px
-    height: 265px
-    background: url(../image/product_3.jpg);
-.grid__product-img4
-    width: 265px
-    height: 265px
-    background: url(../image/product_4.jpg);
-.grid__product-img5
-    width: 265px
-    height: 265px
-    background: url(../image/product_5.jpg);
-.grid__product-img6
-    width: 265px
-    height: 265px
-    background: url(../image/product_6.jpg)
+  width: 265px
+  height: 265px
+  background: url('../image/product_2.jpg')
 
-    
-    
+.grid__product-img3
+  width: 265px
+  height: 265px
+  background: url('../image/product_3.jpg')
+
+.grid__product-img4
+  width: 265px
+  height: 265px
+  background: url('../image/product_4.jpg')
+
+.grid__product-img5
+  width: 265px
+  height: 265px
+  background: url('../image/product_5.jpg')
+
+.grid__product-img6
+  width: 265px
+  height: 265px
+  background: url('../image/product_6.jpg')
 
 .grid__backgaund
-    display: block
-    width: 148px
-    height: 22px
-    position: absolute
-    /* top: 174px; */
-    bottom: 20px
-    right: 10px
+  display: block
+  width: 148px
+  height: 22px
+  position: absolute
+  /* top: 174px */
+  bottom: 20px
+  right: 10px
+
 .text-left
-  padding: 3px 10px;
-  margin: 0;
-  background: #8ae6cf;
-  float: right;
+  padding: 3px 10px
+  margin: 0
+  background: #8ae6cf
+  float: right
 
 .text-right
-    padding: 3px 10px
-    background: #8ae6cf
-    float: right
-.select 
+  padding: 3px 10px
+  background: #8ae6cf
+  float: right
+
+.select
   display: none
+
 .details
+  display: none
+.slidercontainer
   display: none
 
 
@@ -317,79 +326,96 @@ h1
     margin-left: 30px
     width: 710px
     margin-top: 40px
+
   .product__info
     margin-left: 20px
     width: 50%
+
   .product__img
     background-image: url(../image/laptop_index.jpg)
     width: 335px
     height: 354px
+
   .product__info-title
-    right: 0px;
-    top: -55px;
-    float: left;
-    margin: 0;
+    right: 0
+    top: -55px
+    float: left
+    margin: 0
+
   .product__img
     position: relative
     top: 35px
+
   .product__info-share
     display: none
+
   .product__info-size-title
     display: none
-  .select
-    font-size: 20px;
-    font-weight: bold;
-    margin-left: 125px
+
+
   .details
     display: block
     margin-top: 20px
+
   .size > li
     margin-right: 20px
+
   .size > li:hover
     background: red
+
   .product__info-details-title
     clear: both
 
   .grid__product-img1
-      width: 300px
-      height: 284px
-      background: url(../image/tablet_product1.jpg);
+    width: 300px
+    height: 284px
+    background: url(../image/tablet_product1.jpg)
 
   .grid__product-img2
-      width: 300px
-      height: 284px
-      background: url(../image/tablet_product2.jpg);
+    width: 300px
+    height: 284px
+    background: url(../image/tablet_product2.jpg)
+
   .grid__product-img3
-      width: 300px
-      height: 284px
-      background: url(../image/tablet_product3.jpg);
+    width: 300px
+    height: 284px
+    background: url(../image/tablet_product3.jpg)
+
   .grid__product-img4
-      width: 300px
-      height: 284px
-      background: url(../image/tablet_product4.jpg);
+    width: 300px
+    height: 284px
+    background: url(../image/tablet_product4.jpg)
+
   .grid__product-img5
-      width: 300px
-      height: 284px
-      background: url(../image/tablet_product5.jpg);
+    width: 300px
+    height: 284px
+    background: url(../image/tablet_product5.jpg)
+
   .grid__product-img6
-      width: 300px
-      height: 284px
-      background: url(../image/tablet_product6.jpg)
-  .grid__product-img 
-      margin: 0 20px 40px 20px
+    width: 300px
+    height: 284px
+    background: url(../image/tablet_product6.jpg)
+
+  .grid__product-img
+    margin: 0 20px 40px 20px
+
   .grid__title
     text-align: center
+
   .display
     display: none
+
   .grid__backgaund
     bottom: 6px
     background: #8ae6cf
     opacity: 0.8
     width: 280px
-  .text-right,.text-left
+
+  .text-right, .text-left
     width: 100%
     font-size: 22px
     opacity: 1
+
   .product__info-details
     display: block
     border: none
@@ -397,109 +423,127 @@ h1
     padding: 0
     background: none
     box-shadow: none
+
   .product__info-details:after
     content: none
+
   .social
     display: block
+
   .social li
-    display: block;
-    position: relative;
-    top: -106px;
-    right: 359px;
+    display: block
+    position: relative
+    top: -106px
+    right: 359px
+
   .size
-    clear: both;
+    clear: both
+
   .size > li
     cursor: pointer
     display: inline-block
+
   .size li:hover
     background: #2c303d
     color: #fff
-    display: block
+
   .select
     display: block
-    font-size: 14px;
-    font-weight: bold;
-    margin-left: 0px;
+    font-size: 20px
+    font-weight: bold
+    margin-left: 125px
 
 @media screen and (max-width: 402px)
   .container
     width: 402px
     margin: 0 auto
+
   .wrapper
     margin: 0
+
   .product__info
-    margin-left: 30px;
-    display: block;
-    position: relative;
-    top: 105px;
+    margin-left: 30px
+    display: block
+    position: relative
+    top: 105px
+
   .product__info-id
     margin-bottom: 15px
+
   .product__info-rating
     margin-top: 15px
-  .product__img
-    background-image: url(../image/mobile_index.jpg)
-    width: 402px
-    height: 420px
+
   .product__info-title
-    right: 0px;
-    top: -127px;
-    float: left;
-    line-height: 1.5;
-    margin: 32px 104px 0 40px;
+    right: 0
+    top: -127px
+    float: left
+    line-height: 1.5
+    margin: 32px 104px 0 40px
+
   .product__img
     position: relative
+    background-image: url('../image/mobile_index.jpg')
+    width: 402px
+    height: 420px
+
     top: 125px
+
   .product__info-share
     display: none
+
   .product__info-size-title
     display: none
+
   .select
     display: block
     margin-top: 25px
     margin-bottom: 10px
     margin-left: 75px
+
   .details
     display: none
     margin-top: 20px
+
   .size
     clear: both
-    margin-bottom: 30px;
-    margin-left: 32px;
+    margin-bottom: 30px
+    margin-left: 32px
+
   .size > li
     margin-right: 20px
-  .product__info-details-title
-    clear: both
+
   .product__info-addToSize
     margin: 0 auto
+
   .grid__title
     text-align: center
     display: block
     margin-left: 90px
     margin-top: 142px
+
   .display
     display: none
+
   .product__list
     display: none
+
   .social
-    display: block;
-    position: absolute;
-    top: 7px;
-    left: -15px;
-  .social li 
-    display: inline-block
-    top: 386px
-    right: 359px
-    position: initial
+    position: absolute
+    display: block
+    left: -15px
+    top: 7px
+
+    &li
+      display: inline-block
+      position: initial
+      right: 359px
+      top: 386px
+
   .product__info-details-title
-    margin-top: 95px
+    clear: both
     margin-right: 40px
+    margin-top: 95px
     width: 100%
-  // .social
-  //   display: block
-  // .social li
-  //   display: block;
-  //   position: relative;
-  //   top: -106px;
-  //   right: 359px;
-    
-            
+
+  .slidercontainer
+    display: block
