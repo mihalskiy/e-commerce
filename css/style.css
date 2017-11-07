@@ -548,6 +548,7 @@ h1 {
   }
   .size {
     clear: both;
+    position: relative;
   }
   .size > li {
     cursor: pointer;
@@ -610,7 +611,9 @@ h1 {
     display: block;
     margin-top: 25px;
     margin-bottom: 10px;
-    margin-left: 75px;
+    margin-left: 120px;
+    font-size: 20px;
+    font-weight: bold;
   }
   .details {
     display: none;
@@ -619,7 +622,7 @@ h1 {
   .size {
     clear: both;
     margin-bottom: 30px;
-    margin-left: 32px;
+    margin-left: 73px;
   }
   .size > li {
     margin-right: 20px;
@@ -645,7 +648,7 @@ h1 {
     left: -15px;
     top: 7px;
   }
-  .socialli {
+  .social li {
     display: inline-block;
     position: initial;
     right: 359px;
@@ -659,5 +662,24 @@ h1 {
   }
   .slidercontainer {
     display: block;
+  }
+  .text-left {
+    padding: 3px 0px;
+    text-align: center;
+    font-weight: bold;
+    margin-right: -10px;
+  }
+  .grid__background {
+    background: none;
+  }
+  .text-right {
+    padding: 3px 0;
+    background: #8ae6cf;
+    float: right;
+    text-align: center;
+    margin-right: -10px;
+  }
+  .product__info-addToSize {
+    width: 280px;
   }
 }
