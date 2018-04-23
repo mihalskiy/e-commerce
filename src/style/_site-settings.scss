@@ -27,11 +27,16 @@ $price: #ce2c52;
 //background
 $background: #f6f6f6;
 
+h1 {
+font-family: $font2;
+}
 
 // = Grid
 // -----------------------------
 
 // Max width wrapper
 $desktop-width: 1140px;
+$wrapper-width: $desktop-width;
+
 $tablet-width: 725px;
 $mobile-width: 400px;
