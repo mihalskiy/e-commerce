@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+// ----------------------
+// == Site settings
+// ----------------------
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald');
+$font1: 'Oswald', Helvetica, Arial, sans-serif;
+$font2: 'Open Sans', serif;
+
+// = Colors
+// -----------------------------
+
+// color block
+$red: #df2e30;
+$blue: #77d8e7;
+$green: #96c795;
+$pink: #ce92a1;
+$purple: #aa93cf;
+
+//text
+$title: #2c303d;
+$text: #282828;
+$price: #ce2c52;
+
+//background
+$background: #f6f6f6;
+
+
+// = Grid
+// -----------------------------
+
+// Max width wrapper
+$desktop-width: 1140px;
+$tablet-width: 725px;
+$mobile-width: 400px;
