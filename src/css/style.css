@@ -112,7 +112,7 @@ h1 {
 }
 
 .product__img {
-  background-image: url("../image/product_index.jpg");
+  background-image: url("../img/product_index.jpg");
   width: 400px;
   height: 420px;
   display: block;
@@ -250,31 +250,31 @@ h1 {
 .facebook {
   width: 41px;
   height: 41px;
-  background: url("../image/social_sprites.png") -10px -10px;
+  background: url("../img/social_sprites.png") -10px -10px;
 }
 
 .twiter {
   width: 41px;
   height: 41px;
-  background: url("../image/social_sprites.png") -71px -10px;
+  background: url("../img/social_sprites.png") -71px -10px;
 }
 
 .p {
   width: 41px;
   height: 41px;
-  background: url("../image/social_sprites.png") -10px -71px;
+  background: url("../img/social_sprites.png") -10px -71px;
 }
 
 .instagram {
   width: 41px;
   height: 41px;
-  background: url("../image/social_sprites.png") -71px -71px;
+  background: url("../img/social_sprites.png") -71px -71px;
 }
 
 .youtube {
   width: 41px;
   height: 41px;
-  background: url("../image/social_sprites.png") -132px -10px;
+  background: url("../img/social_sprites.png") -132px -10px;
 }
 
 .share {
@@ -364,37 +364,37 @@ h1 {
 .grid__product-img1 {
   width: 265px;
   height: 265px;
-  background: url("../image/product_1.jpg");
+  background: url("../img/product_1.jpg");
 }
 
 .grid__product-img2 {
   width: 265px;
   height: 265px;
-  background: url("../image/product_2.jpg");
+  background: url("../img/product_2.jpg");
 }
 
 .grid__product-img3 {
   width: 265px;
   height: 265px;
-  background: url("../image/product_3.jpg");
+  background: url("../img/product_3.jpg");
 }
 
 .grid__product-img4 {
   width: 265px;
   height: 265px;
-  background: url("../image/product_4.jpg");
+  background: url("../img/product_4.jpg");
 }
 
 .grid__product-img5 {
   width: 265px;
   height: 265px;
-  background: url("../image/product_5.jpg");
+  background: url("../img/product_5.jpg");
 }
 
 .grid__product-img6 {
   width: 265px;
   height: 265px;
-  background: url("../image/product_6.jpg");
+  background: url("../img/product_6.jpg");
 }
 
 .grid__background {
@@ -442,7 +442,7 @@ h1 {
     width: 50%;
   }
   .product__img {
-    background-image: url(../image/laptop_index.jpg);
+    background-image: url(../img/laptop_index.jpg);
     width: 335px;
     height: 354px;
   }
@@ -478,32 +478,32 @@ h1 {
   .grid__product-img1 {
     width: 300px;
     height: 284px;
-    background: url(../image/tablet_product1.jpg);
+    background: url(../img/tablet_product1.jpg);
   }
   .grid__product-img2 {
     width: 300px;
     height: 284px;
-    background: url(../image/tablet_product2.jpg);
+    background: url(../img/tablet_product2.jpg);
   }
   .grid__product-img3 {
     width: 300px;
     height: 284px;
-    background: url(../image/tablet_product3.jpg);
+    background: url(../img/tablet_product3.jpg);
   }
   .grid__product-img4 {
     width: 300px;
     height: 284px;
-    background: url(../image/tablet_product4.jpg);
+    background: url(../img/tablet_product4.jpg);
   }
   .grid__product-img5 {
     width: 300px;
     height: 284px;
-    background: url(../image/tablet_product5.jpg);
+    background: url(../img/tablet_product5.jpg);
   }
   .grid__product-img6 {
     width: 300px;
     height: 284px;
-    background: url(../image/tablet_product6.jpg);
+    background: url(../img/tablet_product6.jpg);
   }
   .grid__product-img {
     margin: 0 20px 40px 20px;
@@ -595,7 +595,7 @@ h1 {
   }
   .product__img {
     position: relative;
-    background-image: url("../image/mobile_index.jpg");
+    background-image: url("../img/mobile_index.jpg");
     width: 402px;
     height: 420px;
     top: 125px;

@@ -34,6 +34,11 @@ $price: #ce2c52;
 //background
 $background: #f6f6f6;
 
+
+//SPRITES
+
+$social: url(../img/social_sprites.png) no-repeat;
+
 // = Grid
 // -----------------------------
 
@@ -43,3 +48,14 @@ $wrapper-width: $desktop-width;
 
 $tablet-width: 725px;
 $mobile-width: 400px;
+
+/*mixin*/
+@mixin clear {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin clear-list {
+  @include clear;
+  list-style: none;
+}
