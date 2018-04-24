@@ -5,8 +5,11 @@
   box-sizing: border-box;
 
   &__item {
-    position: relative;
-    margin: 3em;
+    position: absolute;
+    margin: {
+      top: 40px;
+      left: 5px;
+    }
     padding: 1em 0.3em;
     box-sizing: border-box;
     background: #fff;
@@ -18,28 +21,31 @@
       position: absolute;
       width: 0;
       height: 0;
-      margin-left: -0.5em;
+      margin-left: -.5em;
       bottom: -2em;
       left: 50%;
       border: 1em solid #000;
       border-color: transparent transparent #fff #fff;
       transform-origin: 0 0;
-      opacity: 0.1;
+      /* opacity: .1; */
       transform: rotate(-45deg);
-      top: 3%;
-      box-shadow: 3px -3px 0px 0px rgba(0,0,0,0.4);
+      top: 1%;
+      box-shadow: 1px -1px 0px -1px rgba(0, 0, 0, 0.7);
+      background: #fff;
     }
   }
   &__title {
 
     h3 {
-      font-family: $font1;
-      color:  #2c87ce;
-      font-size: 18px;/* Приближение из-за подстановки шрифтов */
-      font-weight: 700;
-      line-height: 16px;/* Приближение из-за подстановки шрифтов */
-      text-align: center;
+      @include clear;
+      color: #2c87ce;
+      font-size: 18px;
       cursor: pointer;
+      float: left;
+      font-weight: 700;
+      line-height: 16px;
+      text-align: left;
+      font-family: $font2!important;
     }
   }
   &__social {

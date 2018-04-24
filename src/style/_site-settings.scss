@@ -9,13 +9,6 @@
 $font1: 'Oswald', Helvetica, Arial, sans-serif;
 $font2: 'Open Sans', serif;
 
-
-
-h1  {
-  font-family: $font2;
-  font-size: 48px;
-}
-
 // = Colors
 // -----------------------------
 
@@ -31,7 +24,8 @@ $circleShadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.5);
 //text
 $title: #2c303d;
 $text: #282828;
-$price: #ce2c52;
+$new-price: #ce2c52;
+$button: #8ae6cf;
 
 //background
 $background: #f6f6f6;
@@ -50,7 +44,19 @@ $desktop-width: 1140px;
 $wrapper-width: $desktop-width;
 
 $tablet-width: 725px;
-$mobile-width: 400px;
+$mobile-width: 402px;
+
+.wrapper {
+  display: block;
+  background: $background;
+  max-width: $desktop-width;
+  min-width: $tablet-width;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 30px 50px;
+}
 
 /*Mixins*/
 @import "modules/mixins";

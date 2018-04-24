@@ -1,0 +1,143 @@
+.image {
+  display: block;
+  float: left;
+  width: 398px;
+  height: 420px;
+  background-color:  #eaf2f4;
+}
+
+.info {
+  display: block;
+  box-sizing: border-box;
+  max-width: 640px;
+  width: 100%;
+  float: right;
+  padding-left: 55px;
+
+  &__title {
+  h1 {
+    @include clear;
+    font-family: $font1;
+    color:  $title;
+    font-size: 24.02px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    transform: matrix(1,-0.0012,0,1,0,0);/* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+  }
+}
+
+  &__id {
+    margin-top: 20px;
+    h6 {
+      @include clear;
+      font-family: $font2;
+      color:  $title;
+      font-size: 10px;
+      font-weight: 400;
+      text-align: left;
+    }
+  }
+
+  &__price {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    margin: 25px 0;
+
+    &-old {
+      font-family: $font2;
+      color:  $title;
+      font-size: 24px;/* Приближение из-за подстановки шрифтов */
+      font-weight: bold;
+      text-align: left;
+      margin-right: 25px;
+    }
+
+    &-new {
+      @extend .info__price-old;
+      color:  $new-price;
+    }
+  }
+
+  &__center {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+  }
+
+  &__rating {
+    margin-right: 15px;
+    display: block;
+    overflow: hidden;
+    float: left;
+  }
+
+  &__details {
+    display: block;
+    box-sizing: border-box;
+    clear: both;
+    margin-bottom: 25px;
+
+    p {
+      @include clear;
+      font-family: $font2;
+      color:  $text;
+      font-size: 12px;
+      font-weight: 300;
+      text-align: left;
+    }
+  }
+
+  &__size {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+
+    &-title {
+      font-family: $font2;
+      color:  $title;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 25.5px;
+      text-transform: uppercase;
+      text-align: left;
+      float: left;
+      margin-right: 35px;
+    }
+  }
+
+  &__color {
+    @extend .info__size;
+
+    &-title {
+      @extend .info__size-title;
+      margin-right: 15px;
+      line-height: 15.5px;
+    }
+  }
+
+  &__cart {
+    display: block;
+
+
+
+    button {
+      background-color: $button;
+      width: 214px;
+      height: 44px;
+      font-family: $font2;
+      color:  $title;
+      font-size: 13.99px;
+      font-weight: 700;
+      line-height: 46.16px;
+      text-align: center;
+      border: none;
+      border-radius: 29px 29px 29px 29px;
+      text-transform: uppercase;
+    }
+  }
+}

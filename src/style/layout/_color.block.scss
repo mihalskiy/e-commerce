@@ -1,5 +1,5 @@
 .color {
-
+  @include clear;
   display: inline-block;
   clear: both;
 
@@ -8,7 +8,7 @@
     display: inline-block;
     margin: {
       right: 10px;
-      bottom: 12px;
+      //bottom: 12px;
     }
   }
 

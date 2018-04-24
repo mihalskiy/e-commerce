@@ -1,0 +1,33 @@
+.size {
+  @include clear-list;
+
+  li {
+    display: inline-block;
+    margin-right: 12px;
+  }
+
+  a {
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    color: #2c303d;
+  }
+
+  &__xs {
+    @include circle-shadow(100%, $circleShadow, #fff);
+    text-transform: uppercase;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #cccccc;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  &__s {
+    @extend .size__xs;
+  }
+
+  &__m {
+    @extend .size__xs;
+  }
+}
