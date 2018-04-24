@@ -1,0 +1,43 @@
+.color {
+
+  display: inline-block;
+  clear: both;
+
+
+  li {
+    display: inline-block;
+    margin: {
+      right: 10px;
+      bottom: 12px;
+    }
+  }
+
+
+  &__blue {
+    @include circle-shadow(100%, $circleShadow, $blue);
+    display: block;
+    width: 43px;
+    height: 43px;
+  }
+
+  &__green {
+    @include circle-shadow(100%, $circleShadow, $green);
+    display: block;
+    width: 43px;
+    height: 43px;
+  }
+
+  &__red {
+    @include circle-shadow(100%, $circleShadow, $red);
+    display: block;
+    width: 43px;
+    height: 43px;
+  }
+
+  &__pink {
+    @include circle-shadow(100%, $circleShadow, $pink);
+    display: block;
+    width: 43px;
+    height: 43px;
+  }
+}

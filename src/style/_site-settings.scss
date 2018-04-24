@@ -26,6 +26,8 @@ $green: #96c795;
 $pink: #ce92a1;
 $purple: #aa93cf;
 
+$circleShadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.5);
+
 //text
 $title: #2c303d;
 $text: #282828;
@@ -50,13 +52,5 @@ $wrapper-width: $desktop-width;
 $tablet-width: 725px;
 $mobile-width: 400px;
 
-/*mixin*/
-@mixin clear {
-  margin: 0;
-  padding: 0;
-}
-
-@mixin clear-list {
-  @include clear;
-  list-style: none;
-}
+/*Mixins*/
+@import "modules/mixins";
