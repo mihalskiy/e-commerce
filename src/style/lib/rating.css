@@ -14,7 +14,7 @@
   float: right;
   text-indent: -9999px; 
   cursor: pointer;
-  background: url("../img/star_sprites.png");
+  background: url("../../img/star_sprites.png");
   background-position: -11px -11px;
 }
 
