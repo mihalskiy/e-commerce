@@ -1,14 +1,15 @@
 .social {
-    @include clear;
-    text-align:center;
-    display:block;
-    float:left;
-    font-size:12px;
+  text-align:center;
+  display:block;
+  float:left;
+  font-size:12px;
+  width: 100%;
+  margin: 0 auto;
 
     a {
       display: inline-block;
       width: 41px;
-      height: 41px;
+      height: 42px;
       margin: {
         right: 15px;
         bottom: 10px;
@@ -41,9 +42,10 @@
     background-position: -10px -71px;
   }
 
-  &__youtube {
-    background: $social;
-    background-position: -132px -10px;
+  &__close {
+    background: $close;
+    margin-top: 12px;
+    cursor: pointer;
   }
 
 }
